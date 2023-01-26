@@ -1,6 +1,6 @@
 main {
     display: grid;
-    grid-template-rows: 60px 350px 100px;
+    grid-template-rows: 60px 500px 100px;
     grid-template-areas: "nav" "items" "footer";
     border: black solid;
     background-color: whitesmoke;
@@ -12,7 +12,7 @@ main {
     position: relative;
     width: 100%;
     height: 200px;
-    background-color: blue;
+    background-color: whitesmoke;
 }
 .head > div {
     position: relative;
@@ -37,10 +37,24 @@ main {
 
 nav {
     grid-area: "nav";
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 650px auto 650px;
+    grid-template-areas: "empty1" "nav1" "empty2";
     width: 100%;
     text-align: center;
     /* border: red solid; */
+    /* background-color: rgb(0, 255, 8); */
 
+}
+#empty1 {
+    grid-area: "empty1";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://s7d5.scene7.com/is/image/PaperSource/0842612091393-1?resMode=sharp2&op_usm=2,1,25,1&fmt=jpg&qlt=85&fit=constrain,1&wid=600&hei=600");
+}
+
+#empty2 {
+    grid-area: "empty2";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://s7d5.scene7.com/is/image/PaperSource/0842612091393-1?resMode=sharp2&op_usm=2,1,25,1&fmt=jpg&qlt=85&fit=constrain,1&wid=600&hei=600");
 }
 nav>p {
     padding-top: 5px;
@@ -65,7 +79,7 @@ a:hover {
 }
 
 .item {
-    width: 100px;
+    width: 200px;
     height: auto;
 }
 
@@ -73,14 +87,35 @@ a:hover {
     grid-area: items;
     text-align: center;
     border: black solid;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://img.rasset.ie/0015d72f-1600.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
 }
 
-#itemImgCont {
-    padding-left: 50px;
-    padding-right: 50px;
+.itemImgCont {
+    display: inline-block;
+    width: 200px;
+    height: 375px;
+    vertical-align: top;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: solid black;
+    z-index: 1;
+    background-color: whitesmoke;
 }
 article > p {
     font-size: larger;
     font-weight: bold;
     text-decoration: underline;
+}
+.itemDes {
+    display: inline;
+}
+.price {
+    position: relative;
+    top: 10px;
+    border-radius: 40px;
+    background-color: lightblue;
 }
