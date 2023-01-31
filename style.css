@@ -50,6 +50,8 @@ nav {
 #empty1 {
     grid-area: "empty1";
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://s7d5.scene7.com/is/image/PaperSource/0842612091393-1?resMode=sharp2&op_usm=2,1,25,1&fmt=jpg&qlt=85&fit=constrain,1&wid=600&hei=600");
+    /* border: solid black; */
+    /* height: 500px; */
 }
 
 #empty2 {
@@ -84,7 +86,7 @@ a:hover {
 }
 
 .items {
-    grid-area: items;
+    grid-area: "items";
     text-align: center;
     border: black solid;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://img.rasset.ie/0015d72f-1600.jpg");
@@ -118,4 +120,58 @@ article > p {
     top: 10px;
     border-radius: 40px;
     background-color: lightblue;
+}
+
+.contact {
+    font-family: 'Impact', Courier, monospace;
+}
+#text {
+    vertical-align: top;
+}
+
+.formCont {
+    display: grid;
+    grid-area: items;
+    text-align: center;
+    border: black solid;
+    background-color: khaki;
+    z-index: 0;
+    grid-template-rows: 100%;
+    grid-template-columns: 650px auto 650px;
+    grid-template-areas: "empty1" "form" "empty2";
+    background-color: khaki;
+}
+
+.form {
+    grid-area: "form";
+
+
+}
+label{
+    display: block;
+}
+
+label::first-letter {
+    font-size: 25px;
+}
+input[type=text]:focus {
+    background-color: lightcoral;
+}
+textarea:focus {
+    background-color: lightcoral;
+}
+
+.dealsCont {
+    grid-area: "items";
+    display: grid;
+    grid-template-columns: 650px auto;
+    grid-template-rows: 100%;
+    grid-template-areas: "table" "cards";
+    border-top: black solid;
+    border-bottom: black solid;
+}
+
+.dealsTableCont {
+    grid-area: "table";
+    border-right: black solid;
 }
