@@ -39,7 +39,7 @@ nav {
     grid-area: "nav";
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 650px auto 650px;
+    grid-template-columns: 20% auto 20%;
     grid-template-areas: "empty1" "nav1" "empty2";
     width: 100%;
     text-align: center;
@@ -137,7 +137,7 @@ article > p {
     background-color: khaki;
     z-index: 0;
     grid-template-rows: 100%;
-    grid-template-columns: 650px auto 650px;
+    grid-template-columns: 20% auto 20%;
     grid-template-areas: "empty1" "form" "empty2";
     background-color: khaki;
 }
@@ -164,7 +164,7 @@ textarea:focus {
 .dealsCont {
     grid-area: "items";
     display: grid;
-    grid-template-columns: 650px auto;
+    grid-template-columns: 35% auto;
     grid-template-rows: 100%;
     grid-template-areas: "table" "cards";
     border-top: black solid;
