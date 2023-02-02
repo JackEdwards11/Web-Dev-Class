@@ -240,6 +240,9 @@ th:hover {
     height: auto;
     object-fit: cover;
 }
+.card:hover {
+    scale: 125%;
+}
 .dealDes {
     padding-bottom: 10px;
 }
