@@ -1,6 +1,6 @@
 main {
     display: grid;
-    grid-template-rows: 60px 500px 100px;
+    grid-template-rows: 60px 500px 30px;
     grid-template-areas: "nav" "items" "footer";
     border: black solid;
     background-color: whitesmoke;
@@ -74,11 +74,12 @@ span>span {
 
 body{
     margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://s7d5.scene7.com/is/image/PaperSource/0842612091393-1?resMode=sharp2&op_usm=2,1,25,1&fmt=jpg&qlt=85&fit=constrain,1&wid=600&hei=600");
 }
 
-a:hover {
-    color: hotpink;
-}
+
 
 .item {
     width: 200px;
@@ -221,6 +222,7 @@ th:hover {
     width: 100%;
     height: 100%;
     background-color: rgb(220, 222, 217);
+    /* background-color: rgb(21, 21, 20); */
     justify-content: space-around; 
     align-items: center;
 }
@@ -251,4 +253,25 @@ th:hover {
     padding-left: 5px;
     padding-right: 5px;
     background-color: rgb(245, 35, 20);
+}
+
+footer {
+    grid-area: "footer";
+    display: flex;
+    text-align: center;
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: solid black; */
+}
+
+a:visited{
+    color: blue;
+}
+a:active {
+    color: rebeccapurple;
+}
+
+a:hover {
+    color: hotpink;
 }
