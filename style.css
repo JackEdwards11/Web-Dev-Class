@@ -1,0 +1,277 @@
+main {
+    display: grid;
+    grid-template-rows: 60px 500px 30px;
+    grid-template-areas: "nav" "items" "footer";
+    border: black solid;
+    background-color: whitesmoke;
+
+    
+}   
+
+.head {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: whitesmoke;
+}
+.head > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://as1.ftcdn.net/v2/jpg/02/84/27/20/1000_F_284272098_akjWFojMRX7BaBagdlPvYkZUWrjeAegb.jpg");
+    border-bottom: black solid;
+}
+.heroText {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+
+
+nav {
+    grid-area: "nav";
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20% auto 20%;
+    grid-template-areas: "empty1" "nav1" "empty2";
+    width: 100%;
+    text-align: center;
+    /* border: red solid; */
+    /* background-color: rgb(0, 255, 8); */
+
+}
+#empty1 {
+    grid-area: "empty1";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://s7d5.scene7.com/is/image/PaperSource/0842612091393-1?resMode=sharp2&op_usm=2,1,25,1&fmt=jpg&qlt=85&fit=constrain,1&wid=600&hei=600");
+    /* border: solid black; */
+    /* height: 500px; */
+}
+
+#empty2 {
+    grid-area: "empty2";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://s7d5.scene7.com/is/image/PaperSource/0842612091393-1?resMode=sharp2&op_usm=2,1,25,1&fmt=jpg&qlt=85&fit=constrain,1&wid=600&hei=600");
+}
+nav>p {
+    padding-top: 5px;
+}
+.links {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+span>span {
+    background-color: rgba(127, 255, 212, 0.615);
+    padding: 5px;
+    border-radius: 30%;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://s7d5.scene7.com/is/image/PaperSource/0842612091393-1?resMode=sharp2&op_usm=2,1,25,1&fmt=jpg&qlt=85&fit=constrain,1&wid=600&hei=600");
+}
+
+
+
+.item {
+    width: 200px;
+    height: auto;
+}
+
+.items {
+    grid-area: "items";
+    text-align: center;
+    border: black solid;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://img.rasset.ie/0015d72f-1600.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.itemImgCont {
+    display: inline-block;
+    width: 200px;
+    height: 375px;
+    vertical-align: top;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: solid black;
+    z-index: 1;
+    background-color: whitesmoke;
+}
+article > p {
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.itemDes {
+    display: inline;
+}
+.price {
+    position: relative;
+    top: 10px;
+    border-radius: 40px;
+    background-color: lightblue;
+}
+
+.contact {
+    font-family: 'Impact', Courier, monospace;
+}
+#text {
+    vertical-align: top;
+}
+
+.formCont {
+    display: grid;
+    grid-area: items;
+    text-align: center;
+    border: black solid;
+    background-color: khaki;
+    z-index: 0;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% auto 20%;
+    grid-template-areas: "empty1" "form" "empty2";
+    background-color: khaki;
+}
+
+.form {
+    grid-area: "form";
+
+
+}
+label{
+    display: block;
+}
+
+label::first-letter {
+    font-size: 25px;
+}
+input[type=text]:focus {
+    background-color: lightcoral;
+}
+textarea:focus {
+    background-color: lightcoral;
+}
+
+.dealsCont {
+    grid-area: "items";
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 100%;
+    grid-template-areas: "table" "cards";
+    border-top: black solid;
+    border-bottom: black solid;
+}
+
+.dealsTableCont {
+    grid-area: "table";
+    border-right: black solid;
+    background-color: rgb(46, 171, 216);
+
+}
+
+.tableHead {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.table {
+    width: 100%;
+    height: 80%;
+    border-collapse: collapse;
+    /* border-top: solid black;
+    border-bottom: solid black; */
+}
+
+#tableTop {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.tableElementOut {
+    font-weight: normal;
+    border-top: solid black;
+    border-bottom: solid black;
+    
+}
+.tableElementIn {
+    font-weight: normal;
+    border-left: solid black;
+    border-right: solid black;
+    border-top: solid black;
+    border-bottom: solid black;
+    
+}
+th:hover {
+    background-color: bisque;
+}
+
+.dealsCardCont {
+    
+    grid-area: "cards";
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(220, 222, 217);
+    /* background-color: rgb(21, 21, 20); */
+    justify-content: space-around; 
+    align-items: center;
+}
+.card {
+    /* display: inline; */
+    /* position: absolute; */
+    width: 200px;
+    height: 350px;
+    border-style: ridge;
+    box-shadow: 5px 5px 5px black;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card:hover {
+    scale: 125%;
+}
+.dealDes {
+    padding-bottom: 10px;
+}
+.dealPrice {
+    border-radius: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(245, 35, 20);
+}
+
+footer {
+    grid-area: "footer";
+    display: flex;
+    text-align: center;
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: solid black; */
+}
+
+a:visited{
+    color: blue;
+}
+a:active {
+    color: rebeccapurple;
+}
+
+a:hover {
+    color: hotpink;
+}
