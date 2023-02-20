@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" >
+<html lang="en" class="text-center object-center">
 <head>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 	<meta charset="utf-8" />
@@ -8,53 +8,52 @@
     <link rel ="stylesheet" href="output.css">
 </head>
 
-<body class="h-full w-full background-red-500" >
+<body class="h-full w-full bg-slate-500" >
     <header class="head">
-        <div><span class="heroText">Welcome to Our Christmas Store</span></div>
+        <div><span class="text-4xl">Welcome to Our Christmas Store</span></div>
     </header>
     <main>
-        <nav>
-            <span id="empty1"></span>
-            <p id="nav1">
-                <span class="links"><span><a href="index.html">Home</a></span></span>
-                <span class="links"><span><a href="contact.html">Contact Us</a></span></span>
-                <span class="links"><span><a href="deals.html">Deals</a></span></span>
-             </p>
-             <span id="empty2"></span>
+        <nav class="pb-10 pt-5" >
+            
+            <a class="bg-red-500 p-2 rounded hover:bg-violet-600 hover:text-white" href="index.html">Home</a>
+            <a class="bg-red-500 p-2 rounded hover:bg-violet-600 hover:text-white" href="contact.html">Contact Us</a>
+            <a class="bg-red-500 p-2 rounded hover:bg-violet-600 hover:text-white" href="deals.html">Deals</a>
+            
         </nav>
 
-        <article class="items">
-            <p>Product Categories</p>
-            <span class="itemImgCont">
-                <img class="item" src="https://images.thdstatic.com/productImages/8d6977a0-ca7e-45d8-93a7-09456e9e096d/svn/home-decorators-collection-pre-lit-christmas-trees-22wl10098-e1_600.jpg" alt="no img">
+        <p>Product Categories</p>
+        <article class="flex justify-center gap-10">
+            
+            <div class="w-80 border">
+                <img class="w-80 mx-auto" src="https://images.thdstatic.com/productImages/8d6977a0-ca7e-45d8-93a7-09456e9e096d/svn/home-decorators-collection-pre-lit-christmas-trees-22wl10098-e1_600.jpg" alt="no img">
                 <div><b>Christmas Trees</b></div>
                 <p class="itemDes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><br>
                 <span class="price">$100-$200</span>
-            </span>
-            <span class="itemImgCont">
-                <img class="item" src="https://media.angi.com/s3fs-public/house-with-christmas-lights.jpg" alt="no img">
+            </div>
+            <div class="w-80 border">
+                <img class="w-80 mx-auto" src="https://media.angi.com/s3fs-public/house-with-christmas-lights.jpg" alt="no img">
                 <div><b>Christmas Lights</b></div>
                 <p class="itemDes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><br>
                 <span class="price">$10-$20</span>
-            </span>
-            <span class="itemImgCont">
-                <img class="item" src="https://www.biggerbolderbaking.com/wp-content/uploads/2022/11/Kids-Christmas-Cookies-Thumnbail-scaled.jpg" alt="no img">
+            </div>
+            <div class="w-80 border">
+                <img class="w-80 mx-auto" src="https://www.biggerbolderbaking.com/wp-content/uploads/2022/11/Kids-Christmas-Cookies-Thumnbail-scaled.jpg" alt="no img">
                 <div><b>Christmas Treats</b></div>
                 <p class="itemDes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><br>
                 <span class="price">$1-$5</span>
-            </span>
+            </div>
 
         </article>
 
         
-        <footer class="text-center">
+        <footer class=" text-center bottom">
             © Jack Edwards 2000
         </footer>
 
 
 
     </main>
-    
+    <script src="form.js"></script>
 </body>
 
 </html>

@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" class="text-center object-center">
 <head>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 	<meta charset="utf-8" />
 	<title>Christmas Store</title>
     <!-- <link rel ="stylesheet" href="style.css" type="text/css"> -->
+    <link rel ="stylesheet" href="output.css">
 </head>
 
-<body>
+<body class="h-full w-full bg-slate-500 object-center">
     <header class="head">
-        <div><span class="heroText">Deals</span></div>
+        <div><span class="text-4xl">Deals</span></div>
     </header>
     <main>
-        <nav>
-            <span id="empty1"></span>
-            <p id="nav1">
-                <span class="links"><span><a href="index.html">Home</a></span></span>
-                <span class="links"><span><a href="contact.html">Contact Us</a></span></span>
-                <span class="links"><span><a href="deals.html">Deals</a></span></span>
-             </p>
-             <span id="empty2"></span>
+        <nav class="pb-10 pt-5" >
+            
+            <a class="bg-red-500 p-2 rounded hover:bg-violet-600 hover:text-white" href="index.html">Home</a>
+            <a class="bg-red-500 p-2 rounded hover:bg-violet-600 hover:text-white" href="contact.html">Contact Us</a>
+            <a class="bg-red-500 p-2 rounded hover:bg-violet-600 hover:text-white" href="deals.html">Deals</a>
+            
         </nav>
 
-        <article class="dealsCont">
-            <div class="dealsTableCont">
+        <article class="align-middle">
+            <div class="align-middle">
                 <h1 class="tableHead">Shop Our Best Holiday Deals Online</h1>
 
-                <table class="table">
+                <table class="mx-auto border ">
                     <tr>
                         <th class="tableElementOut" id="tableTop">Items</th>
                         <th class="tableElementIn" id="tableTop">Original Price</th>
@@ -51,24 +50,28 @@
                 </table>
 
             </div>
-            <div class="dealsCardCont">
-                <div class="card">
-                    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ17S7i0tByc2T4D97xeJKs56PgW31bJZ-6udueFqsJDOSc7Jc9U_nWn0ifBkbD4ZRFuos&usqp=CAU" alt="no Image"> -->
-                    <!-- <p style="font-size: large; font-weight: bold;">Tree <span class="dealPrice">33%</span></p> -->
-                    <p class="dealDes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <article class="flex justify-center gap-10 pt-5">
+            
+                <div class="w-80 border hover:scale-125">
+                    <img class="w-80 mx-auto" src="https://images.thdstatic.com/productImages/8d6977a0-ca7e-45d8-93a7-09456e9e096d/svn/home-decorators-collection-pre-lit-christmas-trees-22wl10098-e1_600.jpg" alt="no img">
+                    <div><b>Christmas Trees</b></div>
+                    <p class="itemDes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><br>
+                    <span class="price">$100-$200</span>
                 </div>
-                <div class="card">
-                    <!-- <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/christmas-lights-1629296985.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*" alt="no Image"> -->
-                    <!-- <p style="font-size: large; font-weight: bold;">Lights <span class="dealPrice">33%</span></p> -->
-                    <p class="dealDes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <div class="w-80 border hover:scale-125">
+                    <img class="w-80 mx-auto" src="https://media.angi.com/s3fs-public/house-with-christmas-lights.jpg" alt="no img">
+                    <div><b>Christmas Lights</b></div>
+                    <p class="itemDes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><br>
+                    <span class="price">$10-$20</span>
                 </div>
-                <div class="card">
-                    <!-- <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-210915-christmas-brownie-chapter-opener-002-ab-1632847807.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=640:*" alt="no Image"> -->
-                    <!-- <p style="font-size: large; font-weight: bold;">Treats <span class="dealPrice">60%</span></p> -->
-                    <p class="dealDes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="w-80 border hover:scale-125">
+                    <img class="w-80 mx-auto" src="https://www.biggerbolderbaking.com/wp-content/uploads/2022/11/Kids-Christmas-Cookies-Thumnbail-scaled.jpg" alt="no img">
+                    <div><b>Christmas Treats</b></div>
+                    <p class="itemDes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><br>
+                    <span class="price">$1-$5</span>
                 </div>
-
-            </div>
+    
+            </article>
 
         </article>
 
@@ -80,7 +83,7 @@
 
 
     </main>
-    
+    <script src="form.js"></script>
 </body>
 
 </html>

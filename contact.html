@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" class="text-center object-center">
 <head>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 	<meta charset="utf-8" />
@@ -8,20 +8,17 @@
     <link rel ="stylesheet" href="output.css">
 </head>
 
-<body class="contact">
-    <header class="bg-red-500">
-        <div><span class="heroText">Contact Us</span></div>
+<body class="h-full w-full bg-slate-500">
+    <header class="">
+        <div><span class="text-4xl">Contact Us</span></div>
     </header>
     <main>
-        <nav>
-            <span id="empty1"></span>
-            <p id="nav1">
-                <span class="links"><span><a href="index.html">Home</a></span></span>
-                <span class="links"><span><a href="contact.html">Contact Us</a></span></span>
-                <span class="links"><span><a href="deals.html">Deals</a></span></span>
-             </p>
-             <span id="empty2"></span>
-             
+        <nav class="pb-10 pt-5" >
+            
+            <a class="bg-red-500 p-2 rounded hover:bg-violet-600 hover:text-white" href="index.html">Home</a>
+            <a class="bg-red-500 p-2 rounded hover:bg-violet-600 hover:text-white" href="contact.html">Contact Us</a>
+            <a class="bg-red-500 p-2 rounded hover:bg-violet-600 hover:text-white" href="deals.html">Deals</a>
+            
         </nav>
         <article class="formCont">
             <span id="empty1"></span>
@@ -35,15 +32,15 @@
                     <input type="email" id="email" name="email"><br><br>
                     <label for="mess" id="text">Your Message: </label>
                     <textarea id="mess" name="mess" rows="5" cols="50"></textarea><br><br>
-                    <input type="submit" id="sub" name="sub"><br><br>
+                    <input class="cursor-pointer bg-red-500 p-2 rounded" type="submit" id="sub" name="sub"><br><br>
                 </form>
             <!-- </p> -->
-            <p style="display: none;" id="myModal">Information sent</p>
+            <div style="display: none;" class="bg-red-500 p-3" id="myModal">Information sent</div>
             <span id="empty2"></span>
         </article>
 
-        <footer class="text-center">
-            © Jack Edwards 2000
+        <footer class="text-center pt-5">
+            <p>© Jack Edwards 2000</p>
         </footer>
 
         <script src="form.js"></script>
